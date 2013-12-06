@@ -1,5 +1,7 @@
 # Elo-Rank
 
+[![Build Status](https://secure.travis-ci.org/dmamills/elo-rank.png)](http://travis-ci.org/dmamills/elo-rank)
+
 A simple implementation of the elo-ranking system, in javascript.
 
 For information about elo see [here](http://en.wikipedia.org/wiki/Elo_rating_system)
