@@ -1,10 +1,10 @@
 (function() {
-	
+
 
   function EloRank(k) {
 
-		if(!(this instanceof EloRank))
-			return new EloRank(k);
+	 if(!(this instanceof EloRank))
+	   return new EloRank(k);
 
     this.k = k || 32;
 		return this;
@@ -23,7 +23,7 @@
   }
 
   EloRank.prototype.updateRating = function(expected,actual,current) {
-    return parseInt(current+ this.k*(actual-expected),10);
+    return Math.round(current+ this.k*(actual-expected));
   }
 
   module.exports = EloRank;
