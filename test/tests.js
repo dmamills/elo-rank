@@ -1,7 +1,7 @@
 var should = require('should'),
 		Elo = require('./../index');
 describe('elo',function(){
-	
+
 	it('should create instance without new',function() {
 		var elo = Elo();
 		elo.should.be.instanceOf(Elo);
@@ -44,7 +44,16 @@ describe('elo',function(){
 		var expectedA = elo.getExpected(1200,1400);
 		var expectedB = elo.getExpected(1400,1200);
 		elo.updateRating(expectedA,1,1200).should.equal(1224);
-		elo.updateRating(expectedB,0,1400).should.equal(1375);
+		elo.updateRating(expectedB,0,1400).should.equal(1376);
+	});
+
+
+	it('should round rating properly',function() {
+		var elo = Elo();
+		var expectedA = elo.getExpected(1802,1186);
+		var expectedB = elo.getExpected(1186,1802);
+		elo.updateRating(expectedA,1,1802).should.equal(1803);
+		elo.updateRating(expectedB,0,1186).should.equal(1185);
 	});
 
 });
