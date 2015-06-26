@@ -18,12 +18,12 @@ var playerB = 1400;
 
 
 //Gets expected score for first parameter
-var expectedScoreA = elo.getExpected(playerA,playerB);
-var expectedScoreB = elo.getExpected(playerB,playerA);
+var expectedScoreA = elo.getExpected(playerA, playerB);
+var expectedScoreB = elo.getExpected(playerB, playerA);
 
 //update score, 1 if won 0 if lost
-playerA = elo.updateRating(expectedScoreA,1,playerA);
-playerB = elo.updateRating(expectedScoreB,0,playerB);
+playerA = elo.updateRating(expectedScoreA, 1, playerA);
+playerB = elo.updateRating(expectedScoreB, 0, playerB);
 ```
 
 ### License
