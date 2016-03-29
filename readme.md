@@ -1,6 +1,7 @@
-# Elo-Rank
+# elo-rank
 
 [![Build Status](https://secure.travis-ci.org/dmamills/elo-rank.png)](http://travis-ci.org/dmamills/elo-rank)
+[![codecov.io](https://codecov.io/github/dmamills/elo-rank/coverage.svg?branch=master)](https://codecov.io/github/dmamills/elo-rank?branch=master)
 
 A simple implementation of the elo-ranking system, in javascript.
 
