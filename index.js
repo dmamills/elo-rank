@@ -1,3 +1,5 @@
+"use strict";
+
 class EloRank {
   constructor(k) {
     this.k = k || 32;
