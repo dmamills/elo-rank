@@ -1,16 +1,22 @@
 {
-  "name":"elo-rank",
-	"description":"elo ranking system",
-  "version":"0.2.2",
-	"private":false,
-	"keywords":["elo","rank","ranking","chess"],
-	"author":"Daniel Mills",
-	"repository":"http://github.com/dmamills/elo-rank.git",
-	"devDependencies": {
-		"mocha":"*",
-		"should":"*"
-	},
-	"scripts": { 
-	  "test":"make tests"
+  "name": "elo-rank",
+  "description": "elo ranking system",
+  "version": "1.0.0",
+  "private": false,
+  "keywords": [
+    "elo",
+    "rank",
+    "ranking",
+    "chess"
+  ],
+  "author": "dmamills",
+  "repository": "http://github.com/dmamills/elo-rank.git",
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "make tests"
   }
 }

@@ -1,31 +1,21 @@
-(function() {
-
-
-  function EloRank(k) {
-
-	 if(!(this instanceof EloRank))
-	   return new EloRank(k);
-
+class EloRank {
+  constructor(k) {
     this.k = k || 32;
-		return this;
   }
 
-  EloRank.prototype.setKFactor = function(n) {
-    this.k = n;
+  setKFactor(k) {
+    this.k = k;
   }
-
-  EloRank.prototype.getKFactor = function() {
+  getKFactor() {
     return this.k;
   }
 
-  EloRank.prototype.getExpected = function(a,b) {
+  getExpected(a, b) {
     return 1/(1+Math.pow(10,((b-a)/400)));
   }
-
-  EloRank.prototype.updateRating = function(expected,actual,current) {
+  updateRating(expected, actual, current) {
     return Math.round(current+ this.k*(actual-expected));
   }
+}
 
-  module.exports = EloRank;
-
-}).call(this);
+module.exports = EloRank;
