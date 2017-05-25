@@ -12,7 +12,8 @@ For information about elo see [here](http://en.wikipedia.org/wiki/Elo_rating_sys
 ```javascript
 
 //create object with K-Factor(without it defaults to 32)
-var elo = require('elo-rank')(15);
+var EloRank = require('elo-rank');
+var elo = new EloRank(15);
 
 var playerA = 1200;
 var playerB = 1400;
@@ -31,7 +32,7 @@ playerB = elo.updateRating(expectedScoreB, 0, playerB);
 
 (The MIT License)
 
-Copyright (c) 2014 Daniel Mills get@yomills.com
+Copyright (c) 2017 Daniel Mills mills.dma@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
