@@ -14,6 +14,10 @@ V2 now supports Typescript.
 The only breaking change will be the way you import the package. Make sure to specify the default import.
 
 ```js
+// v1
+var EloRank = require("elo-rank");
+
+// v2
 var EloRank = require("elo-rank").default;
 ```
 
