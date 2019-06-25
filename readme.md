@@ -7,17 +7,25 @@ A simple implementation of the elo-ranking system, in javascript.
 
 For information about elo see [here](http://en.wikipedia.org/wiki/Elo_rating_system)
 
+### Migrating to V2
+
+V2 now supports Typescript.
+
+The only breaking change will be the way you import the package. Make sure to specify the default import.
+
+```js
+var EloRank = require("elo-rank").default;
+```
 
 ### Usage
-```javascript
 
+```js
 //create object with K-Factor(without it defaults to 32)
-var EloRank = require('elo-rank');
+var EloRank = require("elo-rank").default;
 var elo = new EloRank(15);
 
 var playerA = 1200;
 var playerB = 1400;
-
 
 //Gets expected score for first parameter
 var expectedScoreA = elo.getExpected(playerA, playerB);
@@ -39,4 +47,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-

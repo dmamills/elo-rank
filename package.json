@@ -1,7 +1,7 @@
 {
   "name": "elo-rank",
   "description": "elo ranking system",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
