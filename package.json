@@ -3,6 +3,8 @@
   "description": "elo ranking system",
   "version": "1.0.3",
   "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "elo",
     "rank",
@@ -14,9 +16,11 @@
   "devDependencies": {
     "codecov": "^1.0.1",
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "typescript": "^3.5.2"
   },
   "scripts": {
+    "build": "tsc",
     "test": "./node_modules/.bin/mocha --ui bdd test/tests.js"
   }
 }
