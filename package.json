@@ -17,6 +17,6 @@
     "should": "*"
   },
   "scripts": {
-    "test": "make tests"
+    "test": "./node_modules/.bin/mocha --ui bdd test/tests.js"
   }
 }
