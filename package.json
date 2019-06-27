@@ -9,14 +9,15 @@
     "ranking",
     "chess"
   ],
+  "license": "MIT",
   "author": "dmamills",
   "repository": "http://github.com/dmamills/elo-rank.git",
   "devDependencies": {
     "codecov": "^1.0.1",
-    "mocha": "*",
-    "should": "*"
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
   },
   "scripts": {
-    "test": "make tests"
+    "test": "mocha test/tests.js"
   }
 }
